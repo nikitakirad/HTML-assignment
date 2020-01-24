@@ -11,9 +11,9 @@ header{
     height:130px;
     position: fixed;
     top:0;
-   /* background-color:grey;*/
+    background-color:white;
 }
-wrapper-one{
+.wrapper-one{
     width:100%;
     height:auto;
 }
@@ -24,13 +24,17 @@ wrapper-one{
     padding:10px 0px;
     float:left;
     height:110px;
+    font-family: 'Roboto', sans-serif;
+
 }
 .header-nav{
-    margin-right:300px;
+    margin-right:280px;
     margin-left: auto;
-    width:420px;
+    width:450px;
     float:right;
     margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
+
 }
 .header-nav ul{
     list-style-type: none;
@@ -52,8 +56,7 @@ wrapper-one{
     float:right;
     color:#00C878;
     padding:15px;
-    
-
+    font-family: 'Roboto', sans-serif;
 }
 
 /*div,section,header {
@@ -63,15 +66,76 @@ div ul{
     border:1px solid black;
 }*/
 section{
-    width:100%;
     padding:10px;
     height:auto;
     margin-top: 130px;
-   /* background-color: black;*/
+    background-color: white;
     overflow: auto;
 }
 .profile-img{
     float:left;
     
+}
+.general-info{
+    height:790px;
+    overflow:auto;
+    color:white;
+    width: 520px;
+    float:left;
+}
+.general-label{
+    margin-left: 40px;
+    margin-top: 170px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.general-label span{
+    height: 54px;
+    color: #0FBF61;
+    background-color:rgb(236, 241, 236) ;
+    padding:10px;
+}
+.general-info-header{
+    margin-left: 40px;
+    font-size: 60px;
+    color:black;
+    font-family: 'Playfair Display', serif;
+
+}
+.general-info-details{
+    margin-left: 40px;
+    font-size: 16px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+
+}
+.general-info-links{
+    margin-left: 40px;
+}
+.button1{
+    height:80px;
+    font-size: 25px;
+    padding:0px 60px;
+    border:1px solid ;
+    border-radius: 3px;
+    background-color:#0FBF61 ;
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.button2{
+    height:80px;
+    font-size: 25px;
+    padding:0px 60px;
+    border:1px solid black;
+    border-radius: 3px;
+    background-color:white ;
+    text-decoration: none;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+
 }
 
