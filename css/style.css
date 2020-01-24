@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Roboto&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    width:100%;
+    height:130px;
+    position: fixed;
+    top:0;
+   /* background-color:grey;*/
+}
+wrapper-one{
+    width:100%;
+    height:auto;
+}
+.wrapper-container{
+    height:130px;
+}
+.header-img{
+    padding:10px 0px;
+    float:left;
+    height:110px;
+}
+.header-nav{
+    margin-right:300px;
+    margin-left: auto;
+    width:420px;
+    float:right;
+    margin-top: 35px;
+}
+.header-nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0px;
+}
+.header-nav li{
+    display:inline;
+    padding:10px;
+
+}
+.header-nav li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+
+}
+.header-para{
+    float:right;
+    color:#00C878;
+    padding:15px;
+    
+
+}
+
+/*div,section,header {
+    border:1px solid red;
+}
+div ul{ 
+    border:1px solid black;
+}*/
+section{
+    width:100%;
+    padding:10px;
+    height:auto;
+    margin-top: 130px;
+   /* background-color: black;*/
+    overflow: auto;
+}
+.profile-img{
+    float:left;
+    
+}
+
