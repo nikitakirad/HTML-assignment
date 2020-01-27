@@ -11,6 +11,7 @@ header{
     height:130px;
     position: fixed;
     top:0;
+    z-index: 1;
     background-color:white;
 }
 .wrapper-one{
@@ -21,13 +22,13 @@ header{
     height:130px;
 }
 .header-img{
-    padding:10px;
     float:left;
-    height:90px;
-    padding-top: 30px;
+    height:110px;
+    padding-top: 20px;
+    margin-left: 40px;
 }
 .header-nav{
-    margin-right:280px;
+    margin-right:150px;
     margin-left: auto;
     width:450px;
     float:right;
@@ -56,22 +57,26 @@ header{
     color:#00C878;
     padding:15px;
     font-family: 'Roboto', sans-serif;
-    margin-right: 2%;
+    margin-right: 3%;
 }
-/*
-div,section,header {
+/*------------------------------------------------------------------------------------------------*/
+/*div,section,header {
     border:1px solid red;
 }
 div ul{ 
     border:1px solid black;
-}*/
+}
+
+
+/*-----------------------------------SECTION-1--------------------------------------------------------*/
 .sec-one{
-    padding:50px;
+    padding-bottom:50px;
+    padding-left:50px;
     height:auto;
     margin-top: 130px;
     background-color:white;
     overflow: auto;
-    position: static;
+    clear:both;
 }
 .profile-img{
     float:left;
@@ -83,7 +88,7 @@ div ul{
     width:600px;
     transform:scale(0.7,0.7);
     margin-right:7%;
-    margin-top: 45px;
+    margin-top: 40px;
     position: static;
 
 }
@@ -116,7 +121,7 @@ div ul{
     
 }
 
-.button1{
+.hireme-button{
     height:80px;
     font-size: 25px;
     padding:0px 60px;
@@ -128,7 +133,7 @@ div ul{
     font-family: 'Roboto', sans-serif;
 
 }
-.button2{
+.explore-button{
     height:80px;
     font-size: 25px;
     padding:0px 60px;
@@ -139,20 +144,24 @@ div ul{
     color:black;
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
-
 }
-.two-sec{
+
+
+/*----------------------------SECTION-2-----------------------------------------------------------------*/
+
+
+.sec-two{
     height:auto;
     overflow: auto;
     padding-left:50px;
     padding-right: 30px;
-    position:static;
     clear:both;
+    padding-bottom: 75px;
 }
 .circle {
     height: 200px;
     width: 200px;
-    border:3px solid #838383;
+    border:5px solid #838383;
     border-radius: 50%;
     position:relative;
     line-height: 120%;
@@ -166,6 +175,7 @@ div ul{
     width:480px;
     float: left;
     overflow: auto;
+    margin-top: 80px;
 }
 .circle-txt{
     font-size: 50px;
@@ -183,19 +193,20 @@ div ul{
 .form{
     float:right;
     width:570px;
-    transform: scale(0.9,0.9);
-    margin-right:2%;
- 
-    
+    transform: scale(0.7,0.7);
+    margin-right:6%;
 }
 input[type=text],input[type=tel]{
     height:89px ;
     font-size: 18px;
     border-radius: 3px;
-    margin-top: 15px;
+    margin-top: 60px;
     width:100%;   
     border:1px solid black; 
 
+}
+input[type=tel]{
+    margin-top: 35px;
 }
 .form-heading{
     font-size: 40px;
@@ -203,19 +214,73 @@ input[type=text],input[type=tel]{
 
 }
 textarea{
-    margin-top: 15px;
+    margin-top: 35px;
     border:1px solid black;
     border-radius: 3px;
 }
 input[type=submit]
 {
-    margin-top: 25px;
+    height:80px;
+    margin-top: 60px;
     border:1px solid #0FBF61;
-    border-radius: 3px;
-    padding:14px 20px;
-    width:140px;
+    border-radius: 4px;
+    padding:20px;
+    width:250px;
     background-color:#0FBF61 ;
     color:white;
+    font-size: 25px;
 
 }
+.horiz-line hr{
+    clear:both;
+    border:1px solid #00C878;
+}
+/*-----------------------------SECTION-3-------------------------------------------------------------*/
+.sec-three{
+    height:auto;
+    width:100%;
+    overflow: auto;
+    border:1px solid red;
+    clear:both;
+}
+.feature-cards{
+    overflow:auto;
+    /*border:1px solid blue;*/
 
+}
+.feature-cards-label{
+    color: rgb(22, 170, 91);
+    background-color:rgb(221, 248, 221) ;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    /*border:1px solid greenyellow;*/
+    width:80px;
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.feature-cards-heading{
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+   /* border:1px solid grey;*/
+    width:350px;
+    margin-left: 41%;
+    margin-right: auto;
+    margin-top:25px;
+}
+.cards-row{
+    height:auto;
+    margin:0px 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.cards-col{
+    width:280px;
+    height:300px;
+    background-color: grey;
+    float:left;
+}
