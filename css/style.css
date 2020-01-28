@@ -1,3 +1,5 @@
+
+ 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Roboto&display=swap');
@@ -32,7 +34,7 @@ header{
     margin-left: auto;
     width:450px;
     float:right;
-    margin-top: 35px;
+    margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -48,16 +50,17 @@ header{
 }
 .header-nav li a{
     text-decoration: none;
-    color:#686868;
-    font-size: 15px;
-
+    color:#151D41;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 .header-para{
     float:right;
-    color:#00C878;
+    color:#0FBF61;
     padding:15px;
     font-family: 'Roboto', sans-serif;
     margin-right: 3%;
+    font-size: 15px;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*div,section,header {
@@ -66,8 +69,6 @@ header{
 div ul{ 
     border:1px solid black;
 }
-
-
 /*-----------------------------------SECTION-1--------------------------------------------------------*/
 .sec-one{
     padding-bottom:50px;
@@ -97,34 +98,45 @@ div ul{
    /* margin-top: 80px;*/
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    
 
 }
 .general-label span{
-    height: 40px;
     color: #0FBF61;
-    background-color:rgb(236, 241, 236) ;
-    padding:10px;
+    background-color:rgb(221, 248, 221) ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .general-info-header{
    /* margin-left: 150px;*/
-    font-size: 40px;
-    color:black;
+    font-size: 35px;
+    color:#151D41;
     font-family: 'Playfair Display', serif;
-    line-height: 120%;
+    line-height: 70%;
+    margin-top: 45px;
 
 }
 .general-info-details{
     /*margin-left: 150px;*/
-    font-size: 12px;
+    font-size: 10px;
     color:black;
     font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+    width:90%;
+    margin-top:30px;
+    color:#151D41;
     
+}
+.general-info-links{
+    margin-top: 35px;
 }
 
 .hireme-button{
-    height:50px;
+    height:40px;
     font-size: 15px;
-    padding:0px 40px;
+    padding:0px 35px;
     border:1px solid #0FBF61;
     border-radius: 3px;
     background-color:#0FBF61 ;
@@ -134,14 +146,14 @@ div ul{
 
 }
 .explore-button{
-    height:50px;
+    height:40px;
     font-size: 15px;
-    padding:0px 40px;
-    border:1px solid black;
+    padding:0px 35px;
+    border:1px solid #686868;
     border-radius: 3px;
     background-color:white ;
     text-decoration: none;
-    color:black;
+    color:#151D41;
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
 }
@@ -159,9 +171,9 @@ div ul{
     padding-bottom: 75px;
 }
 .circle {
-    height: 180px;
-    width: 180px;
-    border:5px solid #838383;
+    height: 170px;
+    width: 170px;
+    border:4px solid #686868;
     border-radius: 50%;
     position:relative;
     line-height: 120%;
@@ -178,8 +190,8 @@ div ul{
     margin-top: 80px;
 }
 .circle-txt{
-    font-size: 50px;
-    color:black;
+    font-size: 40px;
+    color:#151D41;
     text-align: center;
     position: absolute;
     bottom:30%;
@@ -188,7 +200,7 @@ div ul{
 
 }
 .circle:hover{
-    border-color:#0FBF61;
+    border-color:#00C878;
 }
 .form{
     float:right;
@@ -196,41 +208,44 @@ div ul{
     transform: scale(0.7,0.7);
     margin-right:5%;
 }
+.form-heading{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    color:#151D41;
+}
 input[type=text],input[type=tel]{
-    height:50px ;
+    height:40px ;
     font-size: 18px;
     border-radius: 3px;
     margin-top: 60px;
     width:100%;   
-    border:1px solid black; 
-    padding:15px
-
+    border:1px solid #707070; 
+    padding:15px;
+    color:#151D41;
 }
 input[type=tel]{
     margin-top: 35px;
 }
-.form-heading{
-    font-size: 40px;
-    font-family: 'Playfair Display', serif;
 
-}
 textarea{
     margin-top: 35px;
-    border:1px solid black;
+    border:1px solid #707070;
     border-radius: 3px;
     padding:10px;
+    color: #151D41;
 }
 input[type=submit]
 {
-    height:80px;
+    height:60px;
     margin-top: 60px;
     border:1px solid #0FBF61;
     border-radius: 4px;
-    padding:20px;
+    padding:10px;
     width:250px;
     background-color:#0FBF61 ;
     color:white;
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 
 }
 .horiz-line hr{
@@ -244,7 +259,7 @@ input[type=submit]
     overflow: auto;
    /* border:1px solid red;*/
     clear:both;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 .feature-cards{
     overflow:auto;
@@ -252,10 +267,10 @@ input[type=submit]
 
 }
 .feature-cards-label{
-    color: rgb(22, 170, 91);
+    color: #0FBF61;
     background-color:rgb(221, 248, 221) ;
     padding:10px;
-    margin-left:auto;
+    margin-left:42%;
     margin-right:auto;
     /*border:1px solid greenyellow;*/
     width:80px;
@@ -268,71 +283,105 @@ input[type=submit]
     font-family: 'Playfair Display', serif;
    /* border:1px solid grey;*/
     width:350px;
-    margin-left: 41%;
+    margin-left: auto;
     margin-right: auto;
     margin-top:25px;
+    color:#151D41;
 }
 .cards-container{
-    margin-top:30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top:55px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.img-circle{
+    height: 85px;
+    width: 85px;
+    border:1px solid #0FBF61;
+    border-radius: 50%;
+    position:relative;
+}
+.card-img2{
+    position: absolute;
+   /* bottom:10%;
+    width:100%;*/
+    left:12px;
+    top:10px;
+}
+.card-img1{
+    position: absolute;
+    left:17px;
+    top:18px;
+}
+.card-img3{
+    position: absolute;
+    left:17px;
+    top:18px;
 }
 .card{
-    width:264px;
-    height:280px;
-    margin-left:10px;
-    margin-right: 10px;
+    width:220px;
+    height:auto;
+    margin-left:15px;
+    margin-right: 15px;
     display:inline-block;
     background-color:white;
     padding:25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 15px 15px 15px black;*/
+ }
 .card p{
     font-family: 'Playfair Display', serif;
     font-size: 18px;
-    width:100%
-
+    width:100%;
+    color:#151D41;
 }
 .card-underline{
     color: #0FBF61;
     
 }
 .card-para{
-
-    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    font-size:10px;
+    line-height:200% ;
+    color:#151D41;
 }
 .card-button{
     background-color:#0FBF61 ;
     border:1px solid #0FBF61;
     color:white;
-    padding:5px 15px;
+    padding:5px;
     margin-top:25px;
-
 }
 .card-button:after{
     content:'\2192';
 }
 .card:hover{
     background-color:#0FBF61 ;
-    color:white;
-   
 }
-.card-button:hover
+.card:hover p{
+    color:white;
+}
+.card:hover .card-para{
+    color:white;
+}
+.card:hover .card-button
 {
         background-color: white;
         color:black;
 }
-.card-img1:hover{
+.card:hover .card-img1{
     background-image: url(../images/web-design-hover.png);
 }
-.card-img2:hover{
+.card:hover .card-img2{
     background-image: url(../images/graphics-design-hover.png);
 }
-.card-img3:hover{
+.card:hover .card-img3{
     background-image: url(../images/web-development-hover.png);
 }
-.card-underline:hover{
+.card:hover .card-underline{
     color:white;
+}
+.card:hover .img-circle{
+    border:1px solid white;
 }
 /*---------------------------------------SECTION-4----------------------------------------------*/
 .sec-four{
@@ -341,6 +390,7 @@ input[type=submit]
     overflow: auto;
     padding:30px;
     padding-bottom: 50px;
+    clear:both;
 }
 .expertise{
     overflow: auto;
@@ -349,11 +399,13 @@ input[type=submit]
     float:left;
 }
 .expertise-label{
-    color: rgb(22, 170, 91);
+    color:#0FBF61;
     background-color:rgb(221, 248, 221) ;
-    padding:15px;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
      /*border:1px solid greenyellow;*/
-    width:30px;
+    width:35px;
     font-size:12px;
     font-family: 'Roboto', sans-serif;
 }
@@ -363,10 +415,11 @@ input[type=submit]
    /* border:1px solid grey;*/
     width:350px;
     margin-top:20px;
-
+    color:#151D41;
 }
 .expertise-content{
     margin-top: 25px;
+    color:#151D41;
 }
 progress{
     width:350px;
@@ -374,30 +427,35 @@ progress{
 }
 
 progress[value]{
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(76, 196, 126);
 }
 
 .perc-progressbar{
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     margin-top: 35px;
+    color:#151D41;
 }
 .technology-languages{
     font-family: 'Playfair Display', serif;
     font-size: 15px;
+    color:#151D41;
 }
 .portfolio{
     float:left;
     margin-left: 200px;
+    color:#151D41;
 }
 .portfolio-label{
-    color: rgb(22, 170, 91);
+    color:#0FBF61;
     background-color:rgb(221, 248, 221) ;
-    padding:15px;
+    padding:10px;
      /*border:1px solid greenyellow;*/
     width:60px;
     font-size:12px;
     font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;;
 }
 .portfolio-heading{
     font-size: 18px;
@@ -405,7 +463,7 @@ progress[value]{
    /* border:1px solid grey;*/
     width:350px;
     margin-top:20px;
-
+    color:#151D41;
 }
 .img-card{
     width:280px;
@@ -413,7 +471,7 @@ progress[value]{
     margin-left:3px;
     margin-right:3px;
     display:inline-block;
-    margin-top: 25px;
+    margin-top: 40px;
    
 }
 .portfolio-button{
@@ -422,15 +480,18 @@ progress[value]{
     border:1px solid #0FBF61;
     color:white;
     padding:5px 15px;
-    margin-top:60px;
-    width:100%
+    margin-top:65px;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
 }
 /*-------------------------------FOOTER---------------------------------------------------------------*/
 .footer-wrapper{
     padding:30px;
     font-size:10px;
     font-family: 'Montserrat', sans-serif;
+    color:#151D41;
 }
 .footer-content{
     margin-left:50%;
 }
+
