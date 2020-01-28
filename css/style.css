@@ -7,6 +7,7 @@
 body{
     margin:0;
     padding:0;
+    color:#151D41;
 }
 header{
     width:100%;
@@ -46,7 +47,7 @@ header{
 .header-nav li{
     display:inline;
     padding:10px;
-
+    margin:0px 5px;
 }
 .header-nav li a{
     text-decoration: none;
@@ -63,7 +64,8 @@ header{
     font-size: 15px;
 }
 /*------------------------------------------------------------------------------------------------*/
-/*div,section,header {
+/*
+div,section,header {
     border:1px solid red;
 }
 div ul{ 
@@ -133,7 +135,7 @@ div ul{
     margin-top: 35px;
 }
 
-.hireme-button{
+.hireme-button,.explore-button{
     height:40px;
     font-size: 15px;
     padding:0px 35px;
@@ -146,15 +148,9 @@ div ul{
 
 }
 .explore-button{
-    height:40px;
-    font-size: 15px;
-    padding:0px 35px;
     border:1px solid #686868;
-    border-radius: 3px;
     background-color:white ;
-    text-decoration: none;
     color:#151D41;
-    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
 }
 
@@ -256,15 +252,10 @@ input[type=submit]
 .sec-three{
     height:auto; 
     width:100%;
-    overflow: auto;
    /* border:1px solid red;*/
     clear:both;
     padding-bottom: 80px;
-}
-.feature-cards{
-    overflow:auto;
-    /*border:1px solid blue;*/
-
+    overflow: auto;
 }
 .feature-cards-label{
     color: #0FBF61;
@@ -290,8 +281,8 @@ input[type=submit]
 }
 .cards-container{
     margin-top:55px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .img-circle{
     height: 85px;
@@ -320,12 +311,12 @@ input[type=submit]
 .card{
     width:220px;
     height:auto;
-    margin-left:15px;
-    margin-right: 15px;
+    margin-left:35px;
+    margin-right:35px;
     display:inline-block;
     background-color:white;
     padding:25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   /* box-shadow: 15px 15px 15px black;*/
  }
 .card p{
@@ -386,11 +377,10 @@ input[type=submit]
 /*---------------------------------------SECTION-4----------------------------------------------*/
 .sec-four{
     height:auto;
-    width: 100%;
-    overflow: auto;
     padding:30px;
     padding-bottom: 50px;
     clear:both;
+    overflow: auto;
 }
 .expertise{
     overflow: auto;
@@ -424,11 +414,19 @@ input[type=submit]
 progress{
     width:350px;
     height:3px;
+    background: crimson;
 }
 
-progress[value]{
-    background-color:rgb(76, 196, 126);
+progress::-webkit-progress-value {
+  background:#0FBF61;
 }
+
+progress::-webkit-progress-bar {
+  background: rgb(221, 248, 221);
+}
+/* progress[value]{
+    background-color:rgb(76, 196, 126);
+} */
 
 .perc-progressbar{
     font-family: 'Playfair Display', serif;
@@ -490,6 +488,7 @@ progress[value]{
     font-size:10px;
     font-family: 'Montserrat', sans-serif;
     color:#151D41;
+    clear:both;
 }
 .footer-content{
     margin-left:50%;
