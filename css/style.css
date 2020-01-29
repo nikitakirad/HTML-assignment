@@ -8,6 +8,7 @@ body{
     margin:0;
     padding:0;
     color:#151D41;
+    font-family:'Roboto', sans-serif; 
 }
 header{
     width:100%;
@@ -53,13 +54,13 @@ header{
     text-decoration: none;
     color:#151D41;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 .header-para{
     float:right;
     color:#0FBF61;
     padding:15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     margin-right: 3%;
     font-size: 15px;
 }
@@ -95,14 +96,6 @@ div ul{
 
 
 }
-.general-label{
-  /* margin-left: 150px;*/
-   /* margin-top: 80px;*/
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    
-
-}
 .general-label {
     color: #0FBF61;
     background-color:rgb(221, 248, 221) ;
@@ -111,7 +104,7 @@ div ul{
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
 }
 .general-info-header{
    /* margin-left: 150px;*/
@@ -135,19 +128,20 @@ div ul{
 }
 .hireme-button,.explore-button{
     height:50px;
-    font-size: 18px;
+    font-size: 15px;
     padding:0px 45px;
     border:1px solid #0FBF61;
     border-radius: 3px;
     background-color:#0FBF61 ;
     text-decoration: none;
     color:white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     margin-top: 20px;
+    cursor: pointer;
 
 }
 .explore-button{
-    border:1px solid #686868;
+    border:2px solid #686868;
     background-color:white ;
     color:#151D41;
     margin-left: 10px;
@@ -160,9 +154,9 @@ div ul{
 .sec-two{
     height:auto;
     overflow: auto;
-    padding-left:100px;
+    padding-left:80px;
     clear:both;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     padding-right: 50px;
 }
 .circle {
@@ -182,7 +176,7 @@ div ul{
     width:480px;
     float: left;
     overflow: auto;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .circle-txt{
     font-size: 40px;
@@ -214,9 +208,10 @@ input[type=text],input[type=tel]{
     border-radius: 3px;
     margin-top: 35px;
     width:100%;   
-    border:1px solid #707070; 
+    border:2px solid #686868; 
     padding:15px;
     color:#151D41;
+
 }
 input[type=tel]{
     margin-top: 35px;
@@ -224,10 +219,11 @@ input[type=tel]{
 
 textarea{
     margin-top: 35px;
-    border:1px solid #707070;
+    border:2px solid #686868;
     border-radius: 3px;
-    padding:10px;
+    padding:15px;
     color: #151D41;
+    font-size: 18px;
 }
 input[type=submit]
 {
@@ -236,11 +232,14 @@ input[type=submit]
     border:1px solid #0FBF61;
     border-radius: 4px;
     padding:10px;
+    padding-left: 30px;
+    padding-right: 30px;
     width:250px;
     background-color:#0FBF61 ;
     color:white;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
+    cursor: pointer;
 
 }
 .horiz-line hr{
@@ -264,9 +263,9 @@ input[type=submit]
     margin-left:42%;
     margin-right:auto;
     /*border:1px solid greenyellow;*/
-    width:80px;
+    width:90px;
     font-size:12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
 
 }
 .feature-cards-heading{
@@ -329,8 +328,8 @@ input[type=submit]
     
 }
 .card-para{
-    font-family: 'Roboto', sans-serif;
-    font-size:12px;
+    font-family: 'Montserrat', sans-serif;;
+    font-size:10px;
     line-height:200% ;
     color:#151D41;
 }
@@ -340,6 +339,8 @@ input[type=submit]
     color:white;
     padding:5px;
     margin-top:25px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 .card-button:after{
     content:'\2192';
@@ -396,8 +397,8 @@ input[type=submit]
     padding-right: 15px;
      /*border:1px solid greenyellow;*/
     width:35px;
-    font-size:15px;
-    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;;
 }
 .expertise-heading{
     font-size: 20px;
@@ -451,8 +452,8 @@ progress::-webkit-progress-bar {
     padding:10px;
      /*border:1px solid greenyellow;*/
     width:80px;
-    font-size:15px;
-    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;;
     padding-left: 15px;
     padding-right: 15px;;
 }
@@ -481,8 +482,10 @@ progress::-webkit-progress-bar {
     padding:5px 15px;
     margin-top:65px;
     width:100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 /*-------------------------------FOOTER---------------------------------------------------------------*/
 .footer-wrapper{
