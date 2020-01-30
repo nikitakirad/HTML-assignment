@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="reset.css">
+
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -22,14 +24,15 @@
                 </div>
             </header>
             <section class="sec-one">
+                <div class="s-one">
                 <div class="profile-img">
-                    <img src="images/image-1.png" alt="profile img" width=450px>
+                    <img src="images/image-1.png" alt="profile img" width="500">
                 </div>
                 <div class="general-info">
                     <span class="general-label">Welcome! I'M</span>
-                    <p class="general-info-header">
+                    <h2 class="general-info-header">
                         <strong>Wilkerson Hardin</strong><br><span class="sub-heading">Web Developer & UX Designer</span>
-                    </p>
+                    </h2>
                     <p class="general-info-details">
                         lorem ipsum dolar set ametstet clita kaad gubergren,
                             no sea takimata sanctus eat is theolerm ipsum dolar
@@ -39,8 +42,10 @@
                     <button class="hireme-button">Hire Me</button>
                     <button class="explore-button">Explore</button>
                 </div>
+                </div>
             </section>
             <section class="sec-two">
+                <div class="s-two">
                 <div class="skills-perc">
                     <div class="circle">
                         <div class="circle-txt"><b>50%</b><br><span class="sub-heading">WEB DESIGN</span></div>
@@ -65,23 +70,27 @@
                     </form>
                 </div>
                 <div class="horiz-line">
-                    <hr>
+                    <hr >
                 </div>
-            </section>
+                </div>
+                
+               
+               </section>
             <section class="sec-three">
+                <div class="s-three">
                 <div class="feature-cards">
                     <p class="feature-cards-label">
                         MY SERVICES
                     </p> 
-                    <p class="feature-cards-heading">
+                    <h2 class="feature-cards-heading">
                         <b>My Provided Features</b>
-                    </p>
+                    </h2>
                     <div class="cards-container">
                     <div class="card">
                         <div class="img-circle">
                        <img class="card-img1" src="images/web-design.png" alt="image of web-design"></div>
-                        <p><b>Web Design</b></p>
-                        <p class="card-underline"> _ _ _</p>
+                        <h2><b>Web Design</b></h2>
+                        <div class="card-underline"> _ _ _</div>
                         <div class="card-para">Lorem ipsum dolar set ametstet clita kaad gubergren,
                             no sea takimata sanctus eat is theolerm ipsum dolar</div>
                         <button class="card-button">Know more &nbsp</button>
@@ -90,8 +99,8 @@
                     <div class="card">
                         <div class="img-circle">
                         <img class="card-img2" src="images/graphics-design.png" alt="image of graphic design"></div>
-                        <p><b>Graphic Design</b></p>
-                        <p class="card-underline"> _ _ _</p>
+                        <h2><b>Graphic Design</b></h2>
+                        <div class="card-underline"> _ _ _</div>
                         <div class="card-para">Lorem ipsum dolar set ametstet clita kaad gubergren,
                             no sea takimata sanctus eat is theolerm ipsum dolar</div>
                         <button class="card-button">Know more &nbsp</button>
@@ -99,47 +108,52 @@
                     <div class="card">
                         <div class="img-circle">
                         <img class="card-img3" src="images/web-development.png" alt="image of web-development"></div>
-                        <p><b>Web Development</b></p>
-                        <p class="card-underline"> _ _ _</p>
+                        <h2><b>Web Development</b></h2>
+                        <div class="card-underline"> _ _ _</div>
                         <div  class="card-para">Lorem ipsum dolar set ametstet clita kaad gubergren,
                             no sea takimata sanctus eat is theolerm ipsum dolar</div>
                         <button class="card-button">Know more &nbsp</button>
                     </div>
                     </div>
                 </div>
-                
+                </div>
             </section>
             <section class="sec-four">
+                <div class="s-four">
                 <div class="expertise">
                     <p class="expertise-label">
                         SKILL<br>
                     </p> 
-                    <p class="expertise-heading">
+                    <h2 class="expertise-heading">
                         <b>My Expertise</b>
-                    </p>
-                    <div class="expertise-content">
+                    </h2>
                         <p class="perc-progressbar"><b>95%</b><br>
-                            <progress value="95" max="100"></progress>
+                                <div class="progress-bar">
+                                    <span class="progress-bar-value1"></span>
+                                </div>
                         </p>
                         <p class="technology-languages">
                             <b>Web Design</b><br>
                             <span class="sub-heading">HTML,CSS,jQuery</span>
                         </p>
                         <p class="perc-progressbar"><b>85%</b><br>
-                            <progress value="85" max="100"></progress>
+                            <div class="progress-bar">
+                                <span class="progress-bar-value2"></span>
+                            </div>
                         </p>
                         <p class="technology-languages">
                             <b>Graphic Design</b><br>
                             <span class="sub-heading">Photoshop,illustrator</span>
                         </p>
                         <p class="perc-progressbar"><b>70%</b><br>
-                            <progress value="90" max="100"></progress>
+                            <div class="progress-bar">
+                                <span class="progress-bar-value3"></span>
+                            </div>
                         </p>
                         <p class="technology-languages">
                             <b>Web Development</b><br>
                             <span class="sub-heading">HTML,CSS,jQuery</span>
                         </p>
-                    </div>
                 </div>
                 <div class="portfolio">
                     <p class="portfolio-label" >
@@ -158,12 +172,14 @@
                     </div>
                     <button class="portfolio-button">View All</button>
                 </div>
+                </div>
             </section>
             <footer class="footer-wrapper">
-                <div class="horiz-line">
+                <div class="footer-horiz-line">
                     <hr>
-                    <p class="footer-content">All Rights Reserved</p>
                 </div>
+                <p class="footer-content">All Rights Reserved</p>
+                
             </footer>
     </body>
 </html>
