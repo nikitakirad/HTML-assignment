@@ -114,6 +114,7 @@ p{
     border-radius: 50%;
     bottom: 0;
     right: 50px;
+    top:500px;
     z-index: 1;
  }
  
@@ -376,7 +377,7 @@ button{
     right: 50px;
  }
  
- .small-circle{
+.small-circle{
   margin-top: 10%;
    margin-left: 10%;
    
@@ -411,7 +412,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  
+    background-color: black;  
 }
 .plan-heading,.plan-para,.section-six-heading{
     text-align: center;
