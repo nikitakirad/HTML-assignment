@@ -203,7 +203,6 @@ h6{
   height:8px;
   width:80%;
   z-index: 0;
-  padding: 10px;
   background-color:white;
   position:absolute;
   top:50%;
@@ -571,6 +570,9 @@ button{
     padding-left: 125px;
     padding-right: 125px;
     margin-top:20px;
+}
+.star-opacity{
+    opacity: 0.5;
 }
 /*--------------------------------footer-------------------------------------------------*/
 .footer{
