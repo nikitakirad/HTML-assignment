@@ -3,24 +3,41 @@
     <head>
         <link rel="stylesheet" href="css/internet-style.css">
         <link rel="stylesheet" href="reset.css">
+        <style>
+       /*div,section{
+                border:1px solid red;
+            }*/
+        </style>
     </head>
     <body>
             <header>
-                    <img src="images/logo.png" alt="logo image">
+                    <img class="header-img" src="images/logo.png" alt="logo image">
                     <div class="header-menu">
                         <div class="header-nav-container">
                         <ul>
-                                <li><a href="#">Home</a></li><span class="menu-line">&nbsp&nbsp|&nbsp&nbsp</span>
-                                <li><a href="#">About Us</a></li><span class="menu-line">&nbsp&nbsp|&nbsp&nbsp</span>
-                                <li><a href="#">Portfolio</a></li><span class="menu-line">&nbsp&nbsp|&nbsp&nbsp</span>
-                                <li><a href="#">Blog</a></li><span class="menu-line">&nbsp&nbsp|&nbsp&nbsp</span>
-                                <li><a href="#">Contact Us</a></li><span>&nbsp&nbsp&nbsp&nbsp</span>
+                                <li><a href="#">Home</a></li><span class="menu-line">|</span>
+                                <li><a href="#">About Us</a></li><span class="menu-line">|</span>
+                                <li><a href="#">Portfolio</a></li><span class="menu-line">|</span>
+                                <li><a href="#">Blog</a></li><span class="menu-line">|</span>
+                                <li><a href="#">Contact Us</a></li>
                         </ul>
                         </div>
-                        <img class="search" src="images/search.png" alt="search image">
+                        <div class="search">
+                        <img src="images/search.png" alt="search image"></div>
                     </div>
             </header>
             <section class="section-one">
+                <div class="container">
+                    <div class="circle">
+                       <div class="small-circle">
+                           <div class="smaller">
+                           
+                               <img class="img" src="images/support.png" alt="facebook-icon">
+                           
+                           </div>
+                       </div>
+                    </div>
+                 </div>
                 <div class="section-one-container">
                     <div class="section-one-info">
                         <h2>High Speed Internet</h2>
@@ -37,14 +54,16 @@
                     </div>
                 </div>
             </section>
+            
+            <div class="down-arrow"><img  src="images/down-arrow.png" alt="down-arrow-icon"></div>
             <section class="section-two">
                 <div class="section-two-container">
                     <h4>What We Do</h4>
                     <h2 class="services-heading">Our Services</h2>
                     <div class="services-card-container">
                         <div class="card-one">
-                            <div class="dollar-circle">
-                                <div class="dollar-symbol">&$</div>
+                            <div class="dollar-circle1">
+                                $
                             </div>
                             <img class="cards-imag" src="images/promise-icon3.png" alt="promise-image">
                             <h6>Reduced cost</h6>
@@ -54,6 +73,9 @@
                             </p>
                         </div>
                         <div class="cards">
+                            <div class="dollar-circle2">
+                                $
+                            </div>
                             <img class="cards-imag" src="images/promise-icon3.png" alt="promise-image">
                             <h6>Reduced cost</h6>
                             <p class="cards-para">
@@ -62,6 +84,9 @@
                             </p>
                         </div>
                         <div class="cards">
+                            <div class="dollar-circle3">
+                                $
+                            </div>
                             <img class="cards-imag" src="images/promise-icon3.png" alt="promise-image">
                             <h6>Reduced cost</h6>
                             <p class="cards-para">
@@ -71,6 +96,9 @@
                             
                         </div>
                         <div class="card-last">
+                            <div class="dollar-circle4">
+                                $
+                            </div>
                             <img class="cards-imag" src="images/promise-icon3.png" alt="promise-image">
                             <h6>Reduced cost</h6>
                             <p class="cards-para">
@@ -81,5 +109,169 @@
                     </div>
                 </div>
             </section>
+            <section class="section-three">
+                
+                <div class="section-three-container">
+                    <div class="heading-img">
+                        <img class="boardband-img" src="images/brodband.png" alt="boardband-img">
+                        <h2 >100Mbps Boardband</h2>
+                    </div>
+                    <h4>Send Me a Message</h4>
+                    <div class="name-email">
+                        <input type="text" name=name placeholder="Name">
+                        <input type="email" name=email placeholder="Email">
+                    </div>
+                    <div class="phoneno-budget">
+                        <input type="number" name=phoneno placeholder="Phone#">
+                        <select class="budget" name="budget">
+                            <option value="budget">Budget</option>
+                            <option value="saab">Saab</option>
+                          </select>
+                    </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <div class="yes-no">
+                        <span class="yes">Yes</span>
+                        <div class="toggle">
+                        <label class="switch">
+                            <span class="slider round"></span>
+                        </label>
+                        </div>
+                        <span class="no">No</span>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="form-button"type="button">Send Message</button>
+                </div>
+
+            </section>
+            <section class="section-four">
+            	<div class="section-four-container">
+            		<h2 class="plan-heading">Choose Your Plans</h2>
+            		<div class="plan-cards-container">
+            			<p class="plan-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            	 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                             	In ornare quam viverra orci sagittis.</p>
+                       
+                        	<div class=plan-card-one>
+                        		<img src="images/plan-icon.png" alt="plan icon">
+                        		<h4 class="plan-card-heading">Custom Plan</h4>
+                        		<p class="plan-card-para">Premium frameworks to provide high level results</p>
+                        		<button type="button">Get It Now</button>
+                        		<p class="plan-card-para">Learn More</p>
+                        		<div class="info-icon">i</div>
+                        	</div>
+                        	<div class=plan-card-two>
+                        		<img src="images/plan-icon.png" alt="plan icon">
+                        		<h4 class="plan-card-heading">Billing Plan</h4>
+                        		<p class="plan-card-para">Premium frameworks to provide high level results</p>
+                        		<button  type="button">Get It Now</button>
+                        		<p class="plan-card-para">Learn More</p>
+                        		<div class="info-icon">i</div>
+                        	</div>
+                    
+                        </div>
+            	</div>
+            </section>
+            <section class="section-five">
+            	<div class="section-five-container">
+            		<h2 class="promise-heading">Our Promises</h2>
+            		<div class="promise-card-container">
+            			<div class="promise-card-one">
+            				<img class="promise-img" src="images/promise-icon1.png" alt="promise-icon1">
+            				<h6>No FUP,NO Data Limits</h6>
+            				<p class="promise-para">Our unique wireless technology can provide substantial cost benefits when compared Our unique wireless technology can provide substantial cost benefits when compared</p>
+            			</div>
+            			<div class="promise-card-two">
+            				<img class="promise-img" src="images/promise-icon2.png" alt="promise-icon1">
+            				<h6>Single Household</h6>
+            				<p class="promise-para">Our unique wireless technology can provide substantial cost benefits when compared Our unique wireless technology can provide substantial cost benefits when compared</p>
+            			</div>
+            			<div class="promise-card-last">
+            				<img class="promise-img" src="images/promise-icon3.png" alt="promise-icon1">
+            				<h6>No Hidden Charges</h6>
+            				<p class="promise-para">Our unique wireless technology can provide substantial cost benefits when compared Our unique wireless technology can provide substantial cost benefits when compared</p>
+            			</div>
+        
+            		</div>
+            	</div>
+
+            	
+            </section>
+            <section class="section-six">
+                <div class="section-six-container">
+                    <h2 class="section-six-heading">What our client say</h2>
+                    <div class=forward-backward-arrow>
+                        <img class="left-arrow" src="images/arrow-left.png" alt="arrow-img">
+                        <div class="client-cards-container">
+                            <div class="client-card-one">
+                                <div class="star">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img src="images/star_normal.png" alt="star-img">
+                                </div>
+                                <p class="client-para">Its very easy to create stylish,beautiful prototypes for future projects,both
+                                    graphical and dynamical
+                                </p>
+                                <img class="client-logo" src="images/client-logo 5.png" alt="client-logo">
+                            </div>
+                            <div class="client-card-two">
+                                <div class="star">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img src="images/star.png" alt="star-img">
+                                <img src="images/star_normal.png" alt="star-img">
+                                </div>
+                                <p class="client-para">Its very easy to create stylish,beautiful prototypes for future projects,both
+                                    graphical and dynamical
+                                </p>
+                                <img class="client-logo" src="images/client-logo 5.png" alt="client-logo">
+                            </div>
+                            <div class="client-card-three">
+                                <div class="star">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img  src="images/star.png" alt="star-img">
+                                <img src="images/star.png" alt="star-img">
+                                <img src="images/star_normal.png" alt="star-img">
+                                </div>
+                                <p class="client-para">Its very easy to create stylish,beautiful prototypes for future projects,both
+                                    graphical and dynamical
+                                </p>
+                                
+                                <img class="client-logo" src="images/client-logo 5.png" alt="client-logo">
+                            </div>
+                        
+                        </div>
+                        <img class="right-arrow" src="images/arrow-right.png" alt="arrow-img">
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+            	<div class="footer-left">
+            		<div class="location">
+            			<h5 class="footer-heading-left">Location</h5>
+            			<p class="footer-para">fusuis at nisi egate dolar rohnacus malrius</p>
+            		</div>
+            		<div class="email">
+            			<h5 class="footer-heading-left">Email</h5>
+            			<p class="footer-para">jessica.hmkj@mail.com</p>
+            		</div>
+            		<div class="phone-no">
+            			<h5 class="footer-heading-left">Phone</h5>
+            			<p class="footer-para">020-25643490</p>
+            		</div>
+            	</div>
+            	<div class="footer-right">
+            		<img class="footer-img" src="images/facebook.png" alt="facebook-icon">
+            		<img class="footer-img" src="images/instagram.png" alt="instagram-icon">
+            		<img class="footer-img" src="images/youtube.png" alt="youtube-icon">
+            	</div>
+            	<div class="copy-right">
+            		@copyright 2019.All Right Reserved
+            	</div>
+            </footer>
     </body>
 </html>
