@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 *{
     box-sizing: border-box;
 }
 body{
-    padding:0px;
+    padding-top:0px;
     margin:0px;
     font-family: 'Roboto', sans-serif;
-    font-weight:50;
 }
 header{
     height:60px;
@@ -45,108 +42,49 @@ header{
  }
  .header-nav-container li{
      display:inline;
- }
+     border-right: 1px solid white;
+}
+li:last-child{
+    border-right: none;
+}
+
  .header-nav-container li a{
      text-decoration: none;
      color:#151D41;
      font-size: 18px;
      color: white;
+     margin-left:20px;
+     margin-right:20px;
  }
- /*--------------------------------SECTION_1-----------------------------------------------------*/
- .section-one,.section-two,.section-three,.section-four,.section-five,.section-six{
-     width:100%;
-     height:auto;
-     background-color: #0098DA;
-     margin-top: 60px;
-     clear:both;
- }
- /*.section-one{
-     position: relative;
-     top:60px
- }*/
- .section-one-container,.section-two-container,.section-three-container,.section-four-container,.section-five-container,.section-six-container{
-     width:1280px;
-     margin:auto;
+ 
+ /*-----------------------------common css------------------------------------------------------------*/
+.body-container{
+    width:100%;
+
+}
+.section-body{
+    width:100%;
+    height:auto;
+    background-color: #0098DA;
+    clear:both;
+   
+}
+ .section-container{
+    width:1280px;
+    margin:auto;
     padding-top: 70px;
      padding-bottom: 70px;
      overflow: hidden;
-   /* position: relative;*/
+
  }
- .section-one-info,.section-one-pic{
-     width:50%;
-     height:auto;
-     float:left;
-     padding-top: 80px;
-     padding-bottom: 80px;
+ .section-container::after{
+     clear: both;
  }
-.section-one-pic{
-    float:right;
-    padding-top: 0px;
-    padding-left:70px;
-}
+
 h2{
     font-size: 44px;
     color:white;
     font-weight: 50;
-}
-p{
-    font-size: 22px;
-    color:white;
-    
-}
-.play-icon,.play-search{
-    float:left;
-}
-.play-search{
-    margin-top:15px;
-    margin-left: 25px;
-}
-.container {
-    position: relative;
-    width: 100%;
-    
- }
- .circle {
-    position:fixed;
-    width: 120px;
-    height: 120px;
-    background-color: #0098DA;
-    border-radius: 50%;
-    bottom: 0;
-    right: 50px;
-    top:500px;
-    z-index: 1;
- }
- 
- .small-circle{
-  margin-top: 10%;
-   margin-left: 10%;
-   
-   position: fixed;
-   width: 80%;
-   height: 80%;
-   background-color: white;
-   border-radius: 50%;
- }
- .smaller{
-    margin-top: 15%;
-     margin-left: 15%;
-     
-     position: fixed;
-     width: 70%;
-     height: 70%;
-     background-color: red;
-     border-radius: 50%;
-   }
-.img{
-    margin-top: 12%;
-     margin-left: 12%;
-     position: fixed;
-}
-/*--------------------------------------SECTION_2-----------------------------------------------*/
-.section-two{
-   background-color: #006C9D;
-    margin-top:0px;
 }
 h4{
     font-size: 32px;
@@ -154,110 +92,144 @@ h4{
     color:#FFD940;
     font-weight: 50;
 }
-.services-heading{
-    text-align: center;
-}
-.services-card-container{
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-}
 h6{
     font-size: 24px;
     text-align: center;
     color: black;
     font-weight: 500;
 }
-.cards-para{
+p{
+    font-size: 22px;
+    color:white;
+    
+}
+ /*--------------------------------SECTION_1-----------------------------------------------------*/
+.banner{
+    position: relative;
+}
+ .basic-info,.banner-img{
+     width:50%;
+     height:auto;
+     float:left;
+     padding-top: 80px;
+     padding-bottom: 80px;
+ }
+
+.banner-img{
+    float:right;
+    padding-top: 0px;
+    padding-left:70px;
+}
+
+.play-search,.play-icon{
+    float:left;
+}
+.play-video{
+    clear:both;
+}
+.play-search{
+    margin-top:15px;
+    margin-left: 25px;
+}
+.down-arrow{
+    position:absolute;
+    left:50%;
+    bottom:-50px;
+    
+   
+}
+/*
+
+/*--------------------------------------SECTION_2-----------------------------------------------*/
+.blue-bg{
+   background-color: #006C9D;
+}
+
+.blue-bg h2{
+    text-align: center;
+}
+
+.services-card-container .cards{
+    text-align: center;
+    width:22%;
+    float:left;
+    padding:15px;
+    background-color: white;
+    border:1px solid white;
+    border-radius:8px;
+   margin-right: 51px;
+   position: relative;
+   
+}
+.services-card-container .cards:last-child{
+    margin-right: 0px;
+}
+.services-card-container .cards p{
     font-size: 20px;
     color:#0098DA;
 }
-.cards,.card-one,.card-last{
-    text-align: center;
-    float:left;
-    width:22%;
-    padding:15px;
-    background-color: white;
-    margin-right:4%;
-    margin-top:1%;
-    border:1px solid white;
-    border-radius:8px;
-    
-}
-.card-one{
-    margin-left:0%;
-}
-.card-last{
-    margin-right: 0%;
-}
-.card-link{
+
+
+.services-card-container .cards span{
     font-size: 20px;
     color:#006C9D;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.behind-card-bar
+.services-card-container .cards::after,
+.services-card-container .cards::before
 {
-
-  border:none;
+  content: '';
+  width:55px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   height:8px;
-  width:80%;
-  z-index: 0;
   background-color:white;
   position:absolute;
   top:50%;
 }
+.services-card-container .cards::after
+{
+    left:100%;
+}
+.services-card-container .cards::before
+{
+    right:100%;
+}
+.services-card-container .cards:first-child:before,
+.cards:last-child:after {
+  display:none;
+}
 
-
-.dollar-circle1,.dollar-circle2,.dollar-circle3,.dollar-circle4{
-    width:3%;
-    height:8%;
+.services-card-container .cards .dollar-circle{
+    width:40px;
+    height:40px;
     border-radius:50%;
     background-color:#FFD940;
     position: absolute;
-    top:0px;
-    left:230px;
-    text-align:center;
-    font-size: 25px;
-   
+    top:-18px;
+    font-size: 30px;
+    left:80%;
 }
-.dollar-circle2{
-    top:0px;
-    left:560px;
-}
-.dollar-circle3{
-    top:0px;
-    left:890px;
-}
-.dollar-circle4{
-    top:0px;
-    left:1220px;
-}
-.down-arrow{
-    position:absolute;
-    left:49%;
-    top:765px;
-   
-}
+
 /*------------------------SECTION_3-----------------------------------------------------------------*/
-.section-three,.section-four,.section-five,.section-six{
+.white-bg{
     background-color: white;
-    margin-top:0px;
+   
 }
-.heading-img{
-    text-align: center;
-    padding-left:25%;
+.boardband-heading-img{
     overflow: hidden;
+    padding-left: 25%;
 }
-.boardband-img{
+.boardband-heading-img img{
     float:left;
 }
-.heading-img h2{
+.boardband-heading-img h2{
     color:black;
     float:left;
     margin-left: 5%;
 }
-.section-three-container h4{
+form h4{
     clear:both;
     color:black;
     text-align: left;
@@ -273,16 +245,18 @@ input[type="text"],input[type="email"],input[type="number"],.budget{
     border:1px solid grey;
     color:black;
 }
-.name-email,.phoneno-budget{
+.form-group{
+    margin-top: 15px;
+    overflow: hidden;
+    border: 1px solid yellow;
+}
+
+.form-controls{
+    margin-left: 100px;
+    background-color: white;
     overflow: hidden;
 }
-input[type="email"],.budget{
-    margin-left: 6%;
-    background-color: white;
-}
-.phoneno-budget,.yes-no{
-    margin-top: 25px;
-}
+
 textarea{
     width:75%;
     margin-top:25px ;
@@ -400,96 +374,9 @@ button{
     margin-top: 12%;
      margin-left: 12%;
      position: absolute;
-    /* width: 60%;
-     height: 60%;
-     background-color: #0098DA;
-     border-radius: 50%;*/
+   
 }
-/*------------------------------------Section_4-------------------------------------------*/
-.section-four{
-    background-image: url("../images/plan_bg.png") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: black;  
-}
-.plan-heading,.plan-para,.section-six-heading{
-    text-align: center;
-    color:white;
-}
-.plan-cards-container{
-	width:75%;
-	margin:auto;
-	overflow:hidden;
-	height:600px;
-}
-.plan-card-one,.plan-card-two,.promise-card-two,.promise-card-one,.promise-card-last{
-    text-align: center;
-    float:left;
-    width:45%;
-    padding:15px;
-    background-color: white;
-    margin-left:5%;
-    margin-right:5%;
-    border:1px solid white;
-    margin-top:20px;
-    border-radius:8px;
-    position: relative;
-    overflow: hidden;
-}
-.plan-card-heading,.plan-card-heading1{
-	font-size:30px;
-    color:black;
-    transform: skewY(-3deg);
-}
-.plan-card-para,.plan-card-para1{
-	font-size:20px;
-	color:grey;
-    text-align:center;
-    padding-bottom: 15px;
-    padding-top:15px;
-    transform: skewY(-3deg);
-}
-.plan-icon,.plan-button{
-    transform: skewY(-3deg);
-}
-.plan-icon1,.plan-button1,.plan-card-heading1,.plan-card-para1{
-    transform: skewY(3deg);
-}
-.plan-card-one{
-    margin-left:0%;
-    transform: skewY(3deg);
-}
-.plan-card-two{
-    margin-right: 0%;
-     transform: skewY(-3deg);
-}
-.info-icon{
-	text-align: center;
-	 width: 100px;
-    height: 100px;
-     background: #FFD940;
-     border-radius: 50%;
-     font-size: 32px;
-     padding-top:25px;
-     padding-bottom:0px;
-     position: absolute;
-     bottom:-20px;
-     right:-10px;
-}   
-  
-/*---------------------------------------section-5------------------------------------------*/
-.promise-card-container{
-   margin-top:70px;
-}
-.promise-heading{
-   color:black;
-   text-align: center;
-}
-.promise-para{
-   color:grey;
-   font-size:20px;
-}
+
 .promise-card-two,.promise-card-one,.promise-card-last{
    width:30%;
    margin-left:3%;
@@ -509,70 +396,44 @@ button{
    margin-right: 0%;
    padding-top:25px;
 }
-/*-------------------------------------section-6------------------------------------------*/
-.section-six{
+*/
+
+
+.circle {
+    position:fixed;
+    width: 120px;
+    height: 120px;
     background-color: #0098DA;
-}
-.client-card-one,.client-card-two,.client-card-three{
-    float:left;
-    width:420px;
-    height:300px;
-    background-color: white;
-    color:#0098DA;
-    font-size: 20px;
-    margin-left:3%;
-    margin-right:2%;
-    padding:15px;
-    border:1px solid white;
-    border-radius: 8px;
-}
-.forward-backward-arrow{
-    overflow: hidden;
-}
-.client-smaller-cards-container{
-    width:1124px;
-    margin:0px auto;
-    overflow: hidden;
-
-}
-.client-cards-container{
-    width:125%;
-    margin:auto;
-}
-
-.client-para{
-    color:#0098DA;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-.right-arrow{
-    float:right;
-    position: relative;
-    bottom:180px;
-}
-.left-arrow{
-    position: relative;
-    top:150px;
-}
-.client-card-one{
-    margin-left: 0px;
-}
-.client-card-three{
-    margin-right: 0px;
-}
-.client-logo{
-    margin-top:30px;
-    padding-left: 125px;
-    padding-right: 125px;
-}
-.star{
-    padding-left: 125px;
-    padding-right: 125px;
-    margin-top:20px;
-}
-.star-opacity{
-    opacity: 0.5;
+    border-radius: 50%;
+    bottom: 320px;
+    right: 50px;
+    z-index: 1;
+ }
+ 
+ .small-circle{
+  margin-top: 10%;
+   margin-left: 10%;
+   
+   position: absolute;
+   width: 80%;
+   height: 80%;
+   background-color: white;
+   border-radius: 50%;
+ }
+ .smaller{
+    margin-top: 15%;
+     margin-left: 15%;
+     
+     position: absolute;
+     width: 70%;
+     height: 70%;
+     background-color: red;
+     border-radius: 50%;
+   }
+.img{
+    margin-top: 12%;
+     margin-left: 12%;
+     position: absolute;
 }
 /*--------------------------------footer-------------------------------------------------*/
 .footer{
@@ -592,14 +453,17 @@ button{
 }
 .location,.email,.phone-no{
 	float:left;
-	width:300px;
+	width:250px;
     padding-left:30px;
-    padding-right: 30px;
+    
 
 }
 .footer-right{
     float:right;
     margin-top: 30px;
+}
+.social-media{
+    float:right;
 }
 .footer-img{
 	float:left;
@@ -613,5 +477,6 @@ button{
 	clear:both;
 	float:right;
 	font-size:20px;
-	color:white;
+    color:white;
+    margin-top: 100px;
 }
