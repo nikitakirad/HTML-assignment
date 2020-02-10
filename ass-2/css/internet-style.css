@@ -60,7 +60,6 @@ li:last-child{
  /*-----------------------------common css------------------------------------------------------------*/
 .body-container{
     width:100%;
-
 }
 .section-body{
     width:100%;
@@ -75,12 +74,10 @@ li:last-child{
     padding-top: 70px;
      padding-bottom: 70px;
      overflow: hidden;
-
- }
+}
  .section-container::after{
      clear: both;
- }
-
+}
 h2{
     font-size: 44px;
     color:white;
@@ -101,7 +98,6 @@ h6{
 p{
     font-size: 22px;
     color:white;
-    
 }
  /*--------------------------------SECTION_1-----------------------------------------------------*/
 .banner{
@@ -114,13 +110,11 @@ p{
      padding-top: 80px;
      padding-bottom: 80px;
  }
-
 .banner-img{
     float:right;
     padding-top: 0px;
     padding-left:70px;
 }
-
 .play-search,.play-icon{
     float:left;
 }
@@ -135,72 +129,57 @@ p{
     position:absolute;
     left:50%;
     bottom:-50px;
-    
-   
 }
-/*
-
 /*--------------------------------------SECTION_2-----------------------------------------------*/
 .blue-bg{
    background-color: #006C9D;
 }
-
 .blue-bg h2{
     text-align: center;
 }
-
 .services-card-container .cards{
-    text-align: center;
-    width:22%;
+
+    width:25%;
     float:left;
+   background-color:#006C9D;
+   padding: 0px 25px;
+   
+}
+.cards > div{
     padding:15px;
     background-color: white;
     border:1px solid white;
     border-radius:8px;
-   margin-right: 51px;
    position: relative;
-   
+    text-align: center;
 }
-.services-card-container .cards:last-child{
-    margin-right: 0px;
+.services-card-container{
+    margin:0px -25px;
 }
 .services-card-container .cards p{
     font-size: 20px;
     color:#0098DA;
 }
-
-
-.services-card-container .cards span{
+.cards span{
     font-size: 20px;
     color:#006C9D;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.services-card-container .cards::after,
-.services-card-container .cards::before
+.cards > div::after
 {
   content: '';
   width:55px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   height:8px;
   background-color:white;
   position:absolute;
   top:50%;
+  margin-top: -4px;
 }
-.services-card-container .cards::after
+.cards > div::after
 {
     left:100%;
 }
-.services-card-container .cards::before
-{
-    right:100%;
-}
-.services-card-container .cards:first-child:before,
-.cards:last-child:after {
-  display:none;
-}
-
 .services-card-container .cards .dollar-circle{
     width:40px;
     height:40px;
@@ -211,7 +190,6 @@ p{
     font-size: 30px;
     left:80%;
 }
-
 /*------------------------SECTION_3-----------------------------------------------------------------*/
 .white-bg{
     background-color: white;
@@ -235,31 +213,34 @@ form h4{
     text-align: left;
     margin-top: 30px;
 }
+.form-controls{
+    width:50%;
+    float:left;
+    padding: 0px 25px;
+    padding-bottom: 25px;
+}
+.form-controls:last-child{
+    padding-right: 0px;
+}
+.form-controls:first-child{
+    padding-left: 0px;
+}
 input[type="text"],input[type="email"],input[type="number"],.budget{
     height:50px;
     font-size: 18px;
     float:left;
-    width:47%;
+    width:100%;
     border-radius: 5px;
     padding:10px;
     border:1px solid grey;
     color:black;
 }
-.form-group{
-    margin-top: 15px;
-    overflow: hidden;
-    border: 1px solid yellow;
+.form-controls::after{
+    clear:both;
 }
-
-.form-controls{
-    margin-left: 100px;
-    background-color: white;
-    overflow: hidden;
-}
-
 textarea{
     width:75%;
-    margin-top:25px ;
+    margin-bottom:25px ;
     padding:10px;
     border:1px solid grey;
     border-radius: 5px;
@@ -285,36 +266,23 @@ input::placeholder{
 .toggle,.no{
     margin-left: 25px;
 }
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 34px;
+.toggle{
+width:60px;
+height:25px;
+border:1px solid grey;
+position:relative;
+border-radius:15px;
+margin-top: 5px;
 }
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    border:1px solid grey;
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #0098DA;
-}
-.slider.round {
-    border-radius: 34px;
-}
-.slider.round:before {
-    border-radius: 50%;
+.toggle-circle{
+width:20px;
+height:20px;
+border-radius:50%;
+position:absolute;
+top:1px;
+left:2px;
+border:1px solid #0098DA;
+background-color: #0098DA;
 }
 button{
 	height:50px;
@@ -325,6 +293,7 @@ button{
 	border-radius:5px;
     clear:both;
     color:white;
+    cursor: pointer;
 }
 .form-button{
     margin-top: 35px;
@@ -335,21 +304,190 @@ button{
     bottom:0px;
     right:0px;
 }
-.container {
+/*----------------------------------Section-4--------------------------------------------*/
+.bg-img{
+    background-image: url("../images/plan_bg.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;  
+}
+.plan-heading,.plan-para{
+    text-align: center;
+    color:white;
+}
+.plan-cards-container{
+    width:75%;
+    margin:auto;
+    overflow:hidden;
+    height:600px;
+}
+.plan-card-one,.plan-card-two{
+    text-align: center;
+    float:left;
+    width:45%;
+    padding:15px;
+    background-color: white;
+    margin-left:5%;
+    margin-right:5%;
+    border:1px solid white;
+    margin-top:20px;
+    border-radius:8px;
     position: relative;
-    width: 100%;
-    
- }
- .circle {
+    overflow: hidden;
+}
+.plan-card-heading,.plan-card-heading1{
+    font-size:30px;
+    color:black;
+    transform: skewY(-3deg);
+}
+.plan-card-para,.plan-card-para1{
+    font-size:20px;
+    color:grey;
+    text-align:center;
+    padding-bottom: 15px;
+    padding-top:15px;
+    transform: skewY(-3deg);
+}
+.plan-icon,.plan-button{
+    transform: skewY(-3deg);
+}
+.plan-icon1,.plan-button1,.plan-card-heading1,.plan-card-para1{
+    transform: skewY(3deg);
+}
+.plan-card-one{
+    margin-left:0%;
+    transform: skewY(3deg);
+}
+.plan-card-two{
+    margin-right: 0%;
+     transform: skewY(-3deg);
+}
+.info-icon{
+    text-align: center;
+     width: 100px;
+    height: 100px;
+     background: #FFD940;
+     border-radius: 50%;
+     font-size: 32px;
+     padding-top:25px;
+     padding-bottom:0px;
+     position: absolute;
+     bottom:-20px;
+     right:-10px;
+}
+/*---------------------------SECtion-5---------------------------------------------------*/
+.promise-card-container{
+   margin-top:70px;
+}
+.promise-heading{
+   color:black;
+   text-align: center;
+}
+.promise-card p{
+   color:grey;
+   font-size:20px;
+}
+.promise-card-container .promise-card{
+    width:33.33%;
+    float:left;
+   background-color:white;
+  padding: 0px 25px;
+}
+.promise-card > div{
+    padding:15px;
+    background-color: white;
+    border:1px solid white;
+    border-radius:8px;
+   position: relative;
+    text-align: center;
+}
+.promise-card-container{
+    margin:0px -25px;
+}
+.promise-card-two > div{
+   padding-top:0px;
+   padding-left:15px;
+   padding-right:15px;
+   padding-bottom:0px;
+}
+/*-------------------------------------section-6-----------------------------------------*/
+.section-six-heading{
+    text-align: center;
+}
+.client-card-one,.client-card-two,.client-card-three{
+    float:left;
+    width:420px;
+    height:300px;
+    background-color: white;
+    color:#0098DA;
+    font-size: 20px;
+    margin-left:3%;
+    margin-right:2%;
+    padding:15px;
+    border:1px solid white;
+    border-radius: 8px;
+}
+.forward-backward-arrow{
+    overflow: hidden;
+    position: relative;
+}
+.client-smaller-cards-container{
+    width:1124px;
+    margin:0px auto;
+    overflow: hidden;
+
+}
+.client-cards-container{
+    width:1402px;
+    margin:auto;
+}
+.client-para{
+    color:#0098DA;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.right-arrow{
+    float:right;
+    position: absolute;
+    top:150px;
+    right:0px;
+}
+.left-arrow{
+    position: absolute;
+    top:150px;
+}
+.client-card-one{
+    margin-left: 0px;
+}
+.client-card-three{
+    margin-right: 0px;
+}
+.client-logo{
+    margin-top:30px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+.star{
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-top:20px;
+}
+.star-opacity{
+    opacity: 0.5;
+}
+/*---------------------------------------Fixed-circle-------------------------------------*/
+.circle {
     position:fixed;
     width: 120px;
     height: 120px;
     background-color: #0098DA;
     border-radius: 50%;
-    bottom: 0;
+    bottom: 320px;
     right: 50px;
- }
- 
+    z-index: 1;
+}
 .small-circle{
   margin-top: 10%;
    margin-left: 10%;
@@ -369,67 +507,7 @@ button{
      height: 70%;
      background-color: red;
      border-radius: 50%;
-   }
-.img{
-    margin-top: 12%;
-     margin-left: 12%;
-     position: absolute;
-   
 }
-
-.promise-card-two,.promise-card-one,.promise-card-last{
-   width:30%;
-   margin-left:3%;
-   margin-right:2%;
-   margin-top:0px;
-}
-.promise-card-two{
-   padding-top:0px;
-   padding-left:15px;
-   padding-right:15px;
-   padding-bottom:0px;
-}
-.promise-card-one{
-   margin-left:0%;
-}
-.promise-card-last{
-   margin-right: 0%;
-   padding-top:25px;
-}
-*/
-
-
-.circle {
-    position:fixed;
-    width: 120px;
-    height: 120px;
-    background-color: #0098DA;
-    border-radius: 50%;
-    bottom: 320px;
-    right: 50px;
-    z-index: 1;
- }
- 
- .small-circle{
-  margin-top: 10%;
-   margin-left: 10%;
-   
-   position: absolute;
-   width: 80%;
-   height: 80%;
-   background-color: white;
-   border-radius: 50%;
- }
- .smaller{
-    margin-top: 15%;
-     margin-left: 15%;
-     
-     position: absolute;
-     width: 70%;
-     height: 70%;
-     background-color: red;
-     border-radius: 50%;
-   }
 .img{
     margin-top: 12%;
      margin-left: 12%;
@@ -455,8 +533,6 @@ button{
 	float:left;
 	width:250px;
     padding-left:30px;
-    
-
 }
 .footer-right{
     float:right;
